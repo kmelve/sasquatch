@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Sasquatch
-Plugin URI: http://www.knutmelvaer.no/sasquatch
+Plugin URI: https://github.com/kmelve/sasquatch
 Version: 0.1
 Author: Knut Melvær
 Description: Converts Word generated html with footnotes to bigfootjs compatible ones.
@@ -40,6 +40,4 @@ function sasquatch($content_pre){
     return $content_post; /* Return the fresh html. Ready for Bigfoot.js to do its work (also, just nicer) */
 }
 add_filter('content_save_pre','sasquatch');
-
-
 ?>
